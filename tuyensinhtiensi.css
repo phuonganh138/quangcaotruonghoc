@@ -134,6 +134,26 @@ body {
     padding-left: 10px; /* Thụt vào bên trái */
 }
 
+/*banner*/
+/* Định dạng cho container chứa hình ảnh */
+.image-container {
+    width: 100%;               /* Cho container chiếm toàn bộ chiều rộng trang */
+    height: 600px;             /* Đặt chiều cao cố định cho banner, bạn có thể thay đổi theo ý muốn */
+    display: flex;             /* Sử dụng flexbox để căn giữa */
+    justify-content: center;   /* Căn giữa hình ảnh theo chiều ngang */
+    align-items: center;       /* Căn giữa hình ảnh theo chiều dọc */
+    background-color: #ffffff; /* Đặt màu nền nếu muốn có nền sau hình ảnh */
+    }
+
+/* Định dạng cho hình ảnh trong banner */
+.admission-image {
+    max-width: 100%;          /* Đảm bảo hình ảnh không vượt quá chiều rộng của container */
+    height: auto;             /* Tự động điều chỉnh chiều cao dựa trên chiều rộng */
+    object-fit: cover;        /* Cắt hình ảnh để phù hợp với kích thước của container */
+    border-radius: 5px;       /* Bo tròn các góc hình ảnh, nếu cần */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Đổ bóng cho hình ảnh */
+}
+
 
 /* Footer */
 .footer {
