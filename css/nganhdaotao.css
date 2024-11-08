@@ -159,73 +159,103 @@ body {
 
 /* Phần "Các ngành đào tạo" */
 
-.programs {
-    text-align: center;
-    padding: 50px;
-    background-color: #f9fafb;
-}
-
-.programs h2 {
-    font-size: 28px;
-    color: #333;
-    margin-bottom: 40px;
-    margin-top: 30px;
-}
-
+/* Cấu trúc Grid cho các program card */
 .programs-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 60px;
-    max-width: 1200px;
-    margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr);  /* 3 cột đều nhau */
+    gap: 20px;  /* Khoảng cách giữa các hộp */
+    max-width: 1200px; /* Giới hạn độ rộng tối đa */
+    margin: 0 auto; /* Căn giữa lưới */
+    padding: 20px;
 }
 
+/* Style cho program card */
 .program-card {
-    background-color: #ffffff;
+    background-color: #fff;
     border: 1px solid #ddd;
+    padding: 20px;
     border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: left;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Thêm bóng đổ */
+    position: relative;
 }
 
 .program-card img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
 }
 
 .program-card h3 {
-    font-size: 18px;
+    font-size: 20px;
     color: #333;
-    padding: 15px;
+    margin-bottom: 10px;
 }
 
 .program-card p {
     font-size: 14px;
-    color: #666;
-    padding: 0 15px;
+    color: #555;
 }
 
-.learn-more {
-    display: block;
-    width: calc(100% - 30px);
-    margin: 15px auto;
+/* Nút "Tìm hiểu thêm" */
+.program-card button.learn-more {
+    background-color: #007BFF;
+    color: white;
+    border: none;
     padding: 10px;
-    text-align: center;
-    color: #2e5eaa;
-    border: 2px solid #2e5eaa;
-    border-radius: 6px;
-    font-size: 14px;
-    background-color: transparent;
     cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px;
+    font-size: 14px;
 }
 
-.learn-more:hover {
-    background-color: #2e5eaa;
-    color: #fff;
+.program-card button.learn-more:hover {
+    background-color: #0056b3;
 }
+
+/* Popup Overlay */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Màu nền xám mờ cho toàn bộ trang */
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Đảm bảo popup hiển thị trên tất cả */
+}
+
+/* Popup Content */
+.popup-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+    position: relative;
+    z-index: 10000; /* Đảm bảo nội dung popup không bị ẩn */
+}
+
+.popup-title {
+    font-weight: bold;
+    text-transform: uppercase; /* Viết hoa */
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: red;
+}
+
 
 
 /*Chân trang*/
@@ -306,3 +336,4 @@ body {
     vertical-align: middle;
     margin-top: 10px;
 }
+
