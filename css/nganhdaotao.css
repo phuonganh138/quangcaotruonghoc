@@ -1,0 +1,308 @@
+/* Reset mặc định */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+
+/* Header */
+
+.header {
+    background-color: #0a3d91;
+    color: white;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    padding: 20px 0;
+}
+
+.header .logo {
+    width: 90px;
+    height: 90px;
+    margin-left: 20px;
+    margin-right: 30px;
+}
+
+.header-content {
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.header-content h1 {
+    margin: 0;
+    font-size: 30px;
+}
+
+.header-content p {
+    margin: 0;
+    font-size: 16px;
+}
+
+
+/* Thanh công cụ */
+
+.navbar {
+    display: flex;
+    justify-content: left;
+    background-color: #f9f7f7;
+}
+
+.navbar a {
+    display: flex;
+    padding: 15px;
+    text-align: left;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.navbar a:hover {
+    background-color: #ccc;
+}
+
+
+/* Nổi bật mục Tuyển sinh với nền xanh nhạt */
+
+.navbar a.active {
+    background-color: #e2effb;
+    /* Màu nền xanh nhạt */
+    color: #0a3d91;
+    /* Màu chữ xanh đậm */
+    border-radius: 5px;
+    /* Bo góc */
+}
+
+
+/* Khi hover vào các mục trên navbar */
+
+.navbar a:hover {
+    background-color: #f0f4f8;
+}
+
+
+/* Phần Hero Image */
+
+.hero-image {
+    width: 100%;
+    height: auto;
+}
+
+
+/* Quy mô đào tạo */
+
+.training-scale {
+    text-align: center;
+    padding: 80px;
+    background-color: #ece9ec;
+    /* màu nền xám nhẹ */
+}
+
+.training-scale h2 {
+    color: #2e5eaa;
+    font-size: 30px;
+    margin-bottom: 40px;
+    margin-top: 0;
+}
+
+.training-scale p {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.stat-box {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 400px;
+    height: 250px;
+    text-align: center;
+}
+
+.stat-box p {
+    color: #2e5eaa;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.stat-box h3 {
+    font-size: 40px;
+    color: #2e5eaa;
+    margin-bottom: 10px;
+}
+
+.stat-box .degree {
+    background-color: #f3f4f6;
+    color: #333;
+    font-size: 18px;
+    padding: 10px 0;
+    border-radius: 0 0 8px 8px;
+    margin-top: 50px;
+}
+
+
+/* Phần "Các ngành đào tạo" */
+
+.programs {
+    text-align: center;
+    padding: 50px;
+    background-color: #f9fafb;
+}
+
+.programs h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+
+.programs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.program-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.program-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.program-card h3 {
+    font-size: 18px;
+    color: #333;
+    padding: 15px;
+}
+
+.program-card p {
+    font-size: 14px;
+    color: #666;
+    padding: 0 15px;
+}
+
+.learn-more {
+    display: block;
+    width: calc(100% - 30px);
+    margin: 15px auto;
+    padding: 10px;
+    text-align: center;
+    color: #2e5eaa;
+    border: 2px solid #2e5eaa;
+    border-radius: 6px;
+    font-size: 14px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.learn-more:hover {
+    background-color: #2e5eaa;
+    color: #fff;
+}
+
+
+/*Chân trang*/
+
+.footer {
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+    color: #000;
+    font-size: 14px;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: left;
+    max-width: 1000px;
+    margin: 30px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.footer-logo {
+    display: flex;
+    text-align: left;
+    gap: 10px;
+    margin-left: 30px;
+    justify-content: left;
+}
+
+.footer-logo img {
+    height: 60px;
+    margin-left: 0px;
+}
+
+.footer-logo h3 {
+    margin-top: 15px;
+    font-size: 16px;
+    color: #0047ba;
+    margin-bottom: 5px;
+}
+
+.footer-logo p {
+    font-size: 14px;
+    color: #0047ba;
+    margin-top: 5px;
+}
+
+.footer-section {
+    margin-left: 85px;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.footer-section h4 {
+    margin: 0;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: left;
+}
+
+.footer-section p,
+.footer-section a {
+    margin: 5px 0;
+    color: #0a0101;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.footer-social-icons img {
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    margin-top: 10px;
+}
