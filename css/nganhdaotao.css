@@ -229,12 +229,15 @@ body {
 /* Popup Content */
 .popup-content {
     background-color: #fff;
-    padding: 20px;
+    padding: 40px; /* Tăng padding để nội dung rộng hơn */
     border-radius: 8px;
-    width: 300px;
+    width: 1000px; /* Mở rộng chiều rộng của popup */
+    max-width: 80%; /* Đảm bảo popup không quá lớn trên màn hình nhỏ */
     text-align: center;
     position: relative;
     z-index: 10000; /* Đảm bảo nội dung popup không bị ẩn */
+    height: 500px;  /* Thiết lập chiều cao cố định cho popup */
+    overflow-y: auto; /* Thêm thanh cuộn dọc khi nội dung dài hơn chiều cao */
 }
 
 .popup-title {
