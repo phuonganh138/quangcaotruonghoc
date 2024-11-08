@@ -180,7 +180,22 @@
         function closePopup(closeButton) {
             const popup = closeButton.closest('.popup'); // Lấy popup chứa nút đóng
             popup.style.display = 'none'; // Ẩn popup
+        }  
+            // Hàm để hiển thị popup
+        function showPopup(button) {
+            var popup = document.querySelector('.popup');
+            popup.style.display = 'flex'; // Hiển thị popup
+            setTimeout(function() {
+                popup.style.display = 'none'; // Ẩn popup sau 5 giây (5000ms)
+            }, 5000); // Thời gian popup mở
         }
+
+        // Hàm đóng popup khi click vào nút đóng
+        function closePopup() {
+            var popup = document.querySelector('.popup');
+            popup.style.display = 'none'; // Ẩn popup
+        }
+
     </script>
 </body>   
     <!--Chân trang-->
