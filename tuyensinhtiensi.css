@@ -151,8 +151,6 @@ body {
     max-width: 100%;          /* Đảm bảo hình ảnh không vượt quá chiều rộng của container */
     height: auto;             /* Tự động điều chỉnh chiều cao dựa trên chiều rộng */
     object-fit: cover;        /* Cắt hình ảnh để phù hợp với kích thước của container */
-    border-radius: 5px;       /* Bo tròn các góc hình ảnh, nếu cần */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Đổ bóng cho hình ảnh */
 }
 
 
