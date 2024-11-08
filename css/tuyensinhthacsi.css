@@ -37,7 +37,9 @@ body {
     font-size: 16px;
 }
 
+
 /* Thanh công cụ */
+
 .navbar {
     display: flex;
     justify-content: left;
@@ -61,105 +63,184 @@ body {
 
 
 /* Nổi bật mục Tuyển sinh với nền xanh nhạt */
+
 .navbar a.active {
-    background-color: #e2effb; /* Màu nền xanh nhạt */
-    color: #0a3d91; /* Màu chữ xanh đậm */
-    border-radius: 5px; /* Bo góc */
+    background-color: #e2effb;
+    /* Màu nền xanh nhạt */
+    color: #0a3d91;
+    /* Màu chữ xanh đậm */
+    border-radius: 5px;
+    /* Bo góc */
 }
 
+
 /* Khi hover vào các mục trên navbar */
+
 .navbar a:hover {
     background-color: #f0f4f8;
 }
 
+
 /* Phần Hero Image */
+
 .hero-image {
     width: 100%;
     height: auto;
 }
 
+
 /* Thanh công cụ */
+
 .navbar a {
     display: flex;
     align-items: center;
     height: 100%;
 }
 
+
 /* Đảm bảo phần tuyển sinh có lề không thụt vào và căn giữa */
+
 .admission {
-    text-align: center; /* Căn giữa toàn bộ nội dung */
-    color: #1b4e9b; /* Chữ màu xanh da trời */
-    margin: 20px auto; /* Căn giữa và khoảng cách ngoài */
+    text-align: center;
+    /* Căn giữa toàn bộ nội dung */
+    color: #1b4e9b;
+    /* Chữ màu xanh da trời */
+    margin: 20px auto;
+    /* Căn giữa và khoảng cách ngoài */
     padding: 0 10px;
-    }
+}
+
 
 /* Tiêu đề tuyển sinh */
+
 .admission h2 {
-    font-size: 2em; /* Chữ to cho tiêu đề chính */
+    font-size: 2em;
+    /* Chữ to cho tiêu đề chính */
     font-weight: bold;
-    color: #1b4e9b; /* Màu chữ xanh */
+    color: #1b4e9b;
+    /* Màu chữ xanh */
     margin-bottom: 15px;
 }
 
+
 /* Các mục 1, 2, 3, 4 căn trái, thụt vào sâu 20px */
+
 .admission h3 {
-    font-size: 1.2em; /* Chữ lớn hơn một chút */
-    color: #1b4e9b; /* Màu chữ xanh */
-    margin-left: 60px; /* Thụt vào thêm 20px so với đoạn văn */
-    margin-right: 20px; /* Thụt vào bên phải giống như đoạn văn */
-    text-align: left; /* Căn trái */
-}
-.admission h4 {
-    font-size: 1.2em; /* Chữ lớn hơn một chút */
-    color: #1b4e9b; /* Màu chữ xanh */
-    margin-left: 60px; /* Thụt vào thêm 20px so với đoạn văn */
-    margin-right: 20px; /* Thụt vào bên phải giống như đoạn văn */
-    text-align: left; /* Căn trái */
-}
-/* Đoạn văn trong phần tuyển sinh */
-.admission p {
-    font-size: 1em; /* Chữ bình thường */
-    color: #1b4e9b; /* Màu chữ xanh */
-    padding: 10px 20px; /* Khoảng cách trong */
-    margin: 10px auto; /* Khoảng cách ngoài */
-    width: 90%; /* Chiếm 90% chiều rộng */
-    text-align: justify; /* Căn đều hai bên */
+    font-size: 1.2em;
+    /* Chữ lớn hơn một chút */
+    color: #1b4e9b;
+    /* Màu chữ xanh */
+    margin-left: 60px;
+    /* Thụt vào thêm 20px so với đoạn văn */
+    margin-right: 20px;
+    /* Thụt vào bên phải giống như đoạn văn */
+    text-align: left;
+    /* Căn trái */
 }
 
+.admission h4 {
+    font-size: 1.2em;
+    /* Chữ lớn hơn một chút */
+    color: #1b4e9b;
+    /* Màu chữ xanh */
+    margin-left: 60px;
+    /* Thụt vào thêm 20px so với đoạn văn */
+    margin-right: 20px;
+    /* Thụt vào bên phải giống như đoạn văn */
+    text-align: left;
+    /* Căn trái */
+}
+
+
+/* Đoạn văn trong phần tuyển sinh */
+
+.admission p {
+    font-size: 1em;
+    /* Chữ bình thường */
+    color: #1b4e9b;
+    /* Màu chữ xanh */
+    padding: 10px 20px;
+    /* Khoảng cách trong */
+    margin: 10px auto;
+    /* Khoảng cách ngoài */
+    width: 90%;
+    /* Chiếm 90% chiều rộng */
+    text-align: justify;
+    /* Căn đều hai bên */
+}
+
+
 /* Các mục trong danh sách */
+
 .admission ul {
     list-style-type: none;
     padding: 0;
-    text-align: left; /* Căn trái cho danh sách */
+    text-align: left;
+    /* Căn trái cho danh sách */
     margin: 10px auto;
     width: 90%;
 }
 
 .admission ul li {
     font-size: 1em;
-    color: #1b4e9b; /* Chữ xanh cho các mục */
-    padding-left: 10px; /* Thụt vào bên trái */
+    color: #1b4e9b;
+    /* Chữ xanh cho các mục */
+    padding-left: 10px;
+    /* Thụt vào bên trái */
 }
+
 
 /*banner*/
-/* Định dạng cho container chứa hình ảnh */
-.image-container {
-    width: 100%;               /* Cho container chiếm toàn bộ chiều rộng trang */
-    height: 600px;             /* Đặt chiều cao cố định cho banner, bạn có thể thay đổi theo ý muốn */
-    display: flex;             /* Sử dụng flexbox để căn giữa */
-    justify-content: center;   /* Căn giữa hình ảnh theo chiều ngang */
-    align-items: center;       /* Căn giữa hình ảnh theo chiều dọc */
-    background-color: #ffffff; /* Đặt màu nền nếu muốn có nền sau hình ảnh */
-    }
 
-/* Định dạng cho hình ảnh trong banner */
-.admission-image {
-    max-width: 100%;          /* Đảm bảo hình ảnh không vượt quá chiều rộng của container */
-    height: auto;             /* Tự động điều chỉnh chiều cao dựa trên chiều rộng */
-    object-fit: cover;        /* Cắt hình ảnh để phù hợp với kích thước của container */
+
+/* Định dạng cho container chứa hình ảnh */
+
+.image-container {
+    width: 100%;
+    /* Cho container chiếm toàn bộ chiều rộng trang */
+    height: 600px;
+    /* Đặt chiều cao cố định cho banner, bạn có thể thay đổi theo ý muốn */
+    display: flex;
+    /* Sử dụng flexbox để căn giữa */
+    justify-content: center;
+    /* Căn giữa hình ảnh theo chiều ngang */
+    align-items: center;
+    /* Căn giữa hình ảnh theo chiều dọc */
+    background-color: #ffffff;
+    /* Đặt màu nền nếu muốn có nền sau hình ảnh */
 }
 
+.image-container1 {
+    max-width: 600px;
+    /* Cho container chiếm toàn bộ chiều rộng trang */
+    max-height: 500px;
+    /* Đặt chiều cao cố định cho banner, bạn có thể thay đổi theo ý muốn */
+    display: flex;
+    /* Sử dụng flexbox để căn giữa */
+    justify-content: center;
+    /* Căn giữa hình ảnh theo chiều ngang */
+    align-items: center;
+    /* Căn giữa hình ảnh theo chiều dọc */
+    background-color: #ffffff;
+    /* Đặt màu nền nếu muốn có nền sau hình ảnh */
+    margin-left: 350px;
+}
+
+
+/* Định dạng cho hình ảnh trong banner */
+
+.admission-image {
+    max-width: 100%;
+    /* Đảm bảo hình ảnh không vượt quá chiều rộng của container */
+    height: auto;
+    /* Tự động điều chỉnh chiều cao dựa trên chiều rộng */
+    object-fit: cover;
+    /* Cắt hình ảnh để phù hợp với kích thước của container */
+}
+
+
 /* Footer */
+
 .footer {
     background-color: #f8f9fa;
     padding: 20px;
