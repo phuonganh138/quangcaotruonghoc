@@ -65,10 +65,6 @@ body {
     font-size: 18px;
 }
 
-.navbar a:hover {
-    background-color: #ccc;
-}
-
 
 /* Nổi bật mục Tuyển sinh với nền xanh nhạt */
 
@@ -187,6 +183,7 @@ body {
     overflow: hidden;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     text-align: left;
+    text-decoration: none;
 }
 
 .program-card img {
@@ -220,6 +217,7 @@ body {
     background-color: transparent;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
+    text-decoration: none;
 }
 
 .learn-more:hover {
